@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Document</title>
+  <link rel="stylesheet" type="text/css" href="css/style.css">
+  <script src="js/hwApp.js"></script>
+</head>
+
+<body>
+
+  <form id="new-item-form">
+    <div id="form-wrapper">
+
+
+
+
+      <div class="form-item">
+        <label for="name" class="primary">Name</label>
+        <input type="text" id="name" required/>
+      </div>
+
+    <div class="form-item">
+      <label for="class" class="primary">Champion type</label>
+      <select id="type">
+        <option value="" disabled selected></option>
+        <option value="Marksman">Marksman</option>
+        <option value="Control Mage">Control Mage</option>
+        <option value="Assassin">Assassin</option>
+        <option value="Bruiser">Bruiser</option>
+        <option value="Tank">Tank</option>
+        <option value="Enchanter">Enchanter</option>
+      </select>
+    </div>
+
+    <div class="form-item">
+          <label for="lore" class="primary">Lore background</label>
+          <select id="lore">
+            <option value="" disabled selected></option>
+            <option value="Ionia">Ionia</option>
+            <option value="Zaun">Zaun</option>
+            <option value="Piltover">Piltover</option>
+            <option value="Shadow-isles">Shadow isles</option>
+            <option value="Demacia">Demacia</option>
+            <option value="Noxus">Noxus</option>
+            <option value="Shurima">Shurima</option>
+            <option value="Freijlord">Freijlord</option>
+            <option value="Void">Void</option>
+            <option value="Independent">Independent</option>
+          </select>
+        </div>
+      </div>
+      <input type="submit"  value="save">
+  </form>
+
+  <input type="submit" value="Delete all" id="delete-button">
+
+  <h1>Champion list</h1>
+  <ul id="champion-list"></ul>
+
+</body>
+</html>
